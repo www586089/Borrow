@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    android:orientation="vertical">
+
+
+    <!-- 个人图片-->
+    <RelativeLayout
+        android:id="@+id/rl_me_person_infor"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp" >
+
+
+        <LinearLayout
+            android:id="@+id/ll_myperson_infor"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/item_order_manager_more_image"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_me_photo"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                fresco:actualImageScaleType="centerInside"
+                fresco:roundedCornerRadius="30dp"
+                fresco:roundingBorderWidth="1dp"
+                fresco:roundingBorderColor="@color/white"
+                fresco:roundTopLeft="true"
+                fresco:roundTopRight="true"
+                fresco:roundBottomLeft="true"
+                fresco:roundBottomRight="true"
+                 />
+
+            <TextView
+                android:id="@+id/tv_me_nickname"
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Tinna"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_order_manager_more_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_item_goto_right_tip" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="10dp"
+        android:background="@color/list_divider_color" />
+
+
+    <!-- 我的借入-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/ly_borrow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_background"
+            android:clickable="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我借入"
+                android:textColor="@color/text_black"
+                android:textSize="16sp"
+              />
+
+            <TextView
+                android:id="@+id/tv_me_borrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="30dp"
+            android:background="@color/list_divider_color" />
+        <LinearLayout
+            android:id="@+id/ly_loan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_background"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我租出"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_me_leased"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="30dp"
+            android:background="@color/list_divider_color" />
+
+        <LinearLayout
+            android:id="@+id/ly_wallet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_background"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的钱包"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_me_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="31"
+                android:textColor="@color/text_black"
+                android:textSize="16sp"  />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="30dp"
+            android:background="@color/list_divider_color" />
+
+
+    </LinearLayout>
+    <!-- 填充框-->
+
+
+    <TextView
+        android:id="@+id/tv_my_barrow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_background"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/me_draw_barrow"
+        android:drawablePadding="25dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp"
+        android:text="我的借入"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="62dp"
+        android:background="@color/list_divider_color" />
+    <TextView
+        android:id="@+id/tv_my_loan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_background"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/me_draw_my_loan"
+        android:drawablePadding="25dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp"
+        android:text="我的借出"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_my_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_background"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/me_draw_my_loan"
+        android:drawablePadding="25dp"
+        android:gravity="center_vertical"
+
+        android:paddingRight="16dp"
+        android:paddingTop="12dp"
+        android:text="测试"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="62dp"
+        android:background="@color/list_divider_color" />
+
+
+
+    <TextView
+        android:id="@+id/tv_baby_management"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_background"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/me_draw_baby_management"
+        android:drawablePadding="25dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp"
+        android:text="宝贝管理"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="62dp"
+        android:background="@color/list_divider_color" />
+
+
+    <TextView
+        android:id="@+id/tv_my_love"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_background"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/me_draw_my_love"
+        android:drawablePadding="25dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp"
+        android:text="我的收藏"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="62dp"
+        android:background="@color/list_divider_color" />
+
+    <TextView
+        android:id="@+id/tv_my_wallent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_background"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/me_draw_wellet"
+        android:drawablePadding="25dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp"
+        android:text="我的钱包"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="62dp"
+        android:background="@color/list_divider_color" />
+
+
+    <TextView
+        android:id="@+id/tv_setting"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_background"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/me_draw_setting"
+        android:drawablePadding="25dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp"
+        android:text="系统设置"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="62dp"
+        android:background="@color/list_divider_color" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="62dp"
+        android:background="@color/list_divider_color" />
+
+    <!-- 填充框-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_medraw_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/list_item_background"
+        android:gravity="center"
+        android:text="退出当前账号"
+        android:textColor="@color/black"
+       />
+
+</LinearLayout>

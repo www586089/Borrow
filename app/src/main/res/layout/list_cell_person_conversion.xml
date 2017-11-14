@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:padding="5dp"
+                android:background="@drawable/list_item_background"
+>
+
+    <RelativeLayout
+        android:id="@+id/rl_avatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+    >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            fresco:actualImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/icon_placeholder"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:progressBarImage="@mipmap/icon_progress_bar"
+            fresco:progressBarImageScaleType="centerInside"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:failureImage="@mipmap/icon_failure"
+            fresco:failureImageScaleType="centerInside"
+            fresco:roundedCornerRadius="30dp"
+            fresco:roundingBorderWidth="1dp"
+            fresco:roundingBorderColor="@color/white"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"
+        />
+
+        <TextView
+            android:id="@+id/tv_unread_count"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ease_unread_dot"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:gravity="center"
+        />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rl_avatar"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+    >
+
+        <TextView
+            android:id="@+id/tv_conversation_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/text_black"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/tv_new_sub_group"
+            android:layout_alignParentLeft="true"
+            tools:text="老皮匠"
+        />
+
+
+
+        <TextView
+            android:id="@+id/tv_last_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text_gray"
+            android:paddingRight="5dp"
+            android:layout_toLeftOf="@+id/iv_no_disturb"
+            android:layout_below="@id/tv_conversation_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:maxLength="25"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            tools:text="简简单单就好，是不是是不是是不是"
+        />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_last_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_small"
+            android:paddingLeft="3dp"
+            tools:text="20:55"
+        />
+
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_phone"
+            android:visibility="invisible"
+            android:layout_below="@+id/tv_last_msg_time"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/tv_last_msg"
+        />
+    </RelativeLayout>
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:background="@drawable/list_divider_holo_light"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

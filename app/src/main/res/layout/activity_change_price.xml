@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <EditText
+        android:id="@+id/tv_money"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey"
+        android:hint="@string/enter_the_amount"
+        android:numeric="decimal"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <Button
+            android:id="@+id/tv_price"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:textSize="16dp"
+            android:text="@string/save"
+            android:background="@drawable/btn_yellow_round_selector"/>
+    </LinearLayout>
+
+
+</LinearLayout>

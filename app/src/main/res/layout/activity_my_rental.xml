@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/Widget.AppCompat.PopupMenu">
+
+        <TextView
+            android:id="@+id/toolbar_left_title"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="center"
+            android:text="@string/action_back"
+            android:textSize="@dimen/abc_text_size_title_material_toolbar"
+            android:textColor="?android:attr/textColorPrimary"
+            android:drawableLeft="@drawable/ic_action_previous_item"
+            android:paddingLeft="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/my_rental" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MeTabLayoutStyle"
+        app:tabMode="fixed"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_my_rental"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/f1_grey"
+        />
+
+</LinearLayout>

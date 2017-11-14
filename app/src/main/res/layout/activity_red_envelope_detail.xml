@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_user_avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        fresco:actualImageScaleType="centerInside"
+        fresco:placeholderImage="@mipmap/icon_placeholder"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:progressBarImage="@mipmap/icon_progress_bar"
+        fresco:progressBarImageScaleType="centerInside"
+        fresco:progressBarAutoRotateInterval="5000"
+        fresco:failureImage="@mipmap/icon_failure"
+        fresco:failureImageScaleType="centerInside"
+        fresco:roundedCornerRadius="30dp"
+        fresco:roundingBorderWidth="1dp"
+        fresco:roundingBorderColor="@color/white"
+        fresco:roundTopLeft="true"
+        fresco:roundTopRight="true"
+        fresco:roundBottomLeft="true"
+        fresco:roundBottomRight="true"
+    />
+
+    <TextView
+        android:id="@+id/tv_nick_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="@dimen/text_large"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_user_avatar"
+        android:singleLine="true"
+        tools:text="浅笑的红包"
+    />
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:text="1个红包"
+                android:id="@+id/tv_desc"
+              android:paddingLeft="16dp"
+              android:gravity="center_vertical"
+              android:textColor="@color/gray"
+              android:background="@color/white"
+    />
+
+    <ListView android:id="@+id/lv_listview"
+              android:scrollbars="none"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+</LinearLayout>

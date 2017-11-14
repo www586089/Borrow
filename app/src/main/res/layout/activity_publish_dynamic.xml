@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by zfang on 2015/11/07. -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    android:orientation="vertical">
+    <include layout="@layout/view_toolbar"/>
+    <!-- 文本描述-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#eef1eff5"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/tv_item_theme"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@color/white"
+            android:cursorVisible="true"
+            android:gravity="center_vertical|left"
+            android:inputType="text"
+            android:maxLength="40"
+            android:hint="请输入动态主题～～"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_gray"
+            android:textCursorDrawable="@null"
+            android:visibility="gone"
+            android:textSize="14sp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:visibility="gone"
+            android:background="@color/list_divider_color" />
+        <EditText
+            android:id="@+id/tv_item_discrib"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@color/white"
+            android:cursorVisible="true"
+            android:gravity="center_vertical|left"
+            android:inputType="text"
+            android:hint="这一刻的心情和感悟，让大家一起吐槽XX宝贝~~"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_gray"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_small" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color" />
+    </LinearLayout>
+
+
+    <!-- 照片合集 -->
+    <LinearLayout
+        android:id="@+id/pic_add"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:background="@color/white" >
+
+        <HorizontalScrollView
+            android:id="@+id/selectimg_horizontalScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <GridView
+                    android:id="@+id/grid_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:fastScrollEnabled="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:horizontalSpacing="0dp"
+                    android:scrollbars="none"
+                    android:scrollingCache="false"
+                    android:stretchMode="spacingWidthUniform"
+                    android:verticalSpacing="1dp"
+                    android:numColumns="4" >
+                </GridView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dip"
+        android:background="@color/list_divider_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="15dip"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ll_publish_authorization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:background="@drawable/list_item_background"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="谁可以看"
+                android:drawableLeft="@mipmap/icon_publish_dynamic_see"
+                android:drawablePadding="8dip"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_public"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="20dip"
+                android:layout_height="25dip"
+                android:layout_marginRight="15dip"
+                android:src="@mipmap/ic_item_goto_right_tip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color" />
+        <LinearLayout
+            android:id="@+id/rl_email_someone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:background="@drawable/list_item_background"
+            android:clickable="true">
+            <TextView
+                android:id="@+id/tv_item_type_name_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_publish_dynamic_notify"
+                android:drawablePadding="8dip"
+                android:text="提醒谁看 "
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_remind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="20dip"
+                android:layout_height="25dip"
+                android:layout_marginRight="15dip"
+                android:src="@mipmap/ic_item_goto_right_tip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color" />
+    <Button
+        android:id="@+id/btn_publish_item"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/btn_yellow_round_selector"
+        android:text="上传"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

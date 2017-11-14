@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000"
+    >
+    <LinearLayout
+        android:id="@+id/llw"
+        style="@style/MatchView"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+>
+        <TextView
+            android:id="@+id/share_wechat"
+            style="@style/SmallGrayTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:drawableTop="@mipmap/icon_share_wechat"
+            android:gravity="center_horizontal"
+            android:text="微信" />
+
+        <TextView
+            android:id="@+id/share_weibo"
+            style="@style/SmallGrayTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:drawableTop="@mipmap/icon_share_sina_weibo"
+            android:gravity="center_horizontal"
+            android:text="微博" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/hare_qq"
+            style="@style/SmallGrayTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:drawableTop="@mipmap/icon_share_qq"
+            android:gravity="center_horizontal"
+            android:text="QQ空间" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/dissmis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/icon_publish_page_close"
+        android:layout_marginTop="30dip"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

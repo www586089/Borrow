@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/pb_loading"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            wheel:barColor="@color/main_yellow"
+            wheel:progressIndeterminate="true"
+            android:layout_centerInParent="true"
+            />
+
+        <com.jyx.android.widget.view.NoScrollGridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/list_item_background_normal"
+            android:cacheColorHint="@android:color/transparent"
+            android:visibility="invisible"
+            android:numColumns="4"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/ll_group_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:background="@color/list_item_background_normal"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:layout_below="@+id/grid_view"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/list_divider_color"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/list_item_background"
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_gray"
+                    android:textSize="18sp"
+                    android:text="群名称"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_group_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_action_next_item"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_gray"
+                    />
+                
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/list_divider_color"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_group_announce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:textColor="@color/text_gray"
+                android:textSize="18sp"
+                android:text="群通知"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:drawableRight="@drawable/ic_action_next_item"
+                android:gravity="center_vertical"
+                android:background="@drawable/list_item_background"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/list_divider_color"
+                android:layout_marginLeft="10dp"
+                />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/list_item_background"
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_gray"
+                    android:textSize="18sp"
+                    android:text="消息免打扰"
+                    />
+                <ToggleButton
+                android:id="@+id/cb_do_not_disturb"
+                android:layout_width="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:padding="8dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:button="@drawable/ios7_btn"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+
+                <!--<Switch-->
+                    <!--android:id="@+id/cb_do_not_disturb"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:background="@color/toolbar_background"/>-->
+
+            </LinearLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.5dp"-->
+                <!--android:background="@color/list_divider_color"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--/>-->
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_clear_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:textColor="@color/text_gray"
+                android:textSize="18sp"
+                android:text="入群申请"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/list_item_background"
+                android:drawableRight="@drawable/ic_action_next_item"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/list_divider_color"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_red_round_selector"
+            android:textColor="@color/white"
+            android:text="删除并退出"
+            android:gravity="center"
+            android:layout_below="@+id/ll_group_container"
+            android:visibility="invisible"
+            android:textSize="16sp"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>

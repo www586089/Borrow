@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.jyx.android"
+        minSdkVersion 9
+        targetSdkVersion 23
+        versionCode 1
+        versionName "0.0.1alpha"
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    signingConfigs {
+        myConfig{
+            storeFile file("JianYiXia.jks")
+            storePassword "cairuisheng"
+            keyAlias "jianyixia"
+            keyPassword "cairuisheng"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig  signingConfigs.myConfig
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//    minifyEnabled false
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    productFlavors {
+    }
+
+    dexOptions {
+        incremental true
+        preDexLibraries = false
+    }
+
+    sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile "com.android.support:appcompat-v7:${android_support_version}"
+    compile "com.android.support:recyclerview-v7:${android_support_version}"
+    compile "com.android.support:support-annotations:${android_support_version}"
+    compile "com.android.support:design:${android_support_version}"
+    compile "io.reactivex:rxjava:${rx_java_version}"
+    compile "io.reactivex:rxandroid:${rx_android_version}"
+    compile "com.squareup.retrofit2:converter-gson:${retrofit_version}"
+    compile "com.squareup.retrofit2:adapter-rxjava:${retrofit_version}"
+    compile "com.squareup.retrofit2:retrofit:${retrofit_version}"
+    compile "com.google.code.gson:gson:${gson_version}"
+    compile "com.facebook.fresco:fresco:${fresco_version}"
+    compile "com.jakewharton:butterknife:${butterknife_version}"
+    compile 'com.github.promeg:tinypinyin:1.0.0'
+    // 属性动画兼容
+    compile 'com.nineoldandroids:library:2.4.0'
+    //
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    //融云IM
+    compile project(':IMKit')
+    compile project(':library-umengshare')
+    compile project(':materialish-progress-1.2')
+    compile project(':cn.pedant.sweetalert-library-1.3')
+    compile project(':android-uitableview')
+
+}

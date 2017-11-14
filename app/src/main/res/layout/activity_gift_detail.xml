@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:fresco="http://schemas.android.com/apk/res-auto"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="60dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginTop="20dp"
+                  android:background="@color/white"
+                  android:orientation="vertical"
+                  android:padding="20dp"
+    >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            fresco:failureImage="@mipmap/icon_failure"
+            fresco:failureImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/icon_placeholder"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundedCornerRadius="30dp"
+            fresco:roundingBorderWidth="1dp"
+            fresco:roundingBorderColor="@color/white"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"
+        />
+
+        <TextView android:id="@+id/tv_description"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="bottom|center_horizontal"
+                  android:layout_marginTop="5dp"
+                  android:gravity="center"
+                  android:text="时光小美女毛绒娃娃礼物最好看了"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/text_small"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="礼物会在48小时内寄出，工作人员会联系收货方"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_smaller"
+        />
+
+    </LinearLayout>
+
+
+    <ImageView android:id="@+id/iv_close"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@mipmap/icon_close_black"
+    />
+
+
+</FrameLayout>

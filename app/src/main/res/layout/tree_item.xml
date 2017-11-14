@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/lv_treeitem_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/treenode_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/lv_treeitem_blank"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_treeitem_expanded"
+            android:layout_width="@dimen/treenode_icon_width"
+            android:layout_height="15dp" />
+
+        <ImageView
+            android:id="@+id/iv_treeitem_node"
+            android:layout_width="@dimen/treenode_icon_width"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lv_treeview_tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_treeitem_user_img"
+                android:layout_width="@dimen/treenode_icon_width"
+                android:layout_height="@dimen/treenode_icon_width"
+                android:adjustViewBounds="true"
+
+                android:visibility="visible"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                fresco:actualImageScaleType="centerInside"
+                fresco:placeholderImage="@mipmap/icon_placeholder"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:progressBarImage="@mipmap/icon_progress_bar"
+                fresco:progressBarImageScaleType="centerInside"
+                fresco:progressBarAutoRotateInterval="5000"
+                fresco:failureImage="@mipmap/icon_failure"
+                fresco:failureImageScaleType="centerInside"
+                fresco:roundedCornerRadius="30dp"
+                fresco:roundingBorderWidth="1dp"
+                fresco:roundingBorderColor="@color/white"
+                fresco:roundTopLeft="true"
+                fresco:roundTopRight="true"
+                fresco:roundBottomLeft="true"
+                fresco:roundBottomRight="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_treeitem_description"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/l_text_size" />
+
+            <Button
+                android:id="@+id/btn_treeitem_attention"
+                android:layout_gravity="center_vertical|right"
+                android:layout_width="55dp"
+                android:textColor="@color/text_black"
+                android:textSize="9sp"
+                android:layout_height="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/bg_9patchbutton"
+                android:text="+关注" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

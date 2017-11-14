@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">借一下</string>
+    <string name="menu_settings">Settings</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <!-- Common Strings-->
+    <string name="loading">加载中...</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="loading_no_more">没有更多啦</string>
+    <string name="load_data_error">对不起,出错了</string>
+    <string name="no_internet_error">没有可用的网络</string>
+    <string name="network_exception">网络异常请稍后再试</string>
+    <string name="session_data_error">无效的Session，请重新登录</string>
+    <string name="action_open">打开</string>
+    <string name="action_close">关闭</string>
+    <string name="action_back"></string>
+    <string name="action_complete">完成</string>
+    <string name="amount">金额</string>
+    <string name="save">保存</string>
+    <string name="action_more">更多</string>
+
+    <!-- 登录-->
+    <string name="toolbar_title_sign_in">登录</string>
+    <string name="toolbar_title_sign_up">注册</string>
+    <string name="title_activity_me">MeActivity</string>
+    <string name="auth_login">一键登录</string>
+    <string name="login_failed">登陆失败</string>
+
+    <!-- Error View -->
+    <string name="error_view_click_to_refresh">点击屏幕,重新加载</string>
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="error_view_loading">加载中…</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="tip_network_error">没有可用的网络</string>
+
+    <string name="tip_load_data_error">对不起,无法加载数据.</string>
+
+
+
+
+    <!-- 主界面 -->
+    <string name="action_plus">添加</string>
+    <string name="add_contact">添加手机联系人</string>
+    <string name="qr_scan">扫一扫</string>
+    <string name="new_group">建群</string>
+
+
+    <!--购买-->
+    <string name="buy_right_now_title_center">确认订单</string>
+    <string name="buy_right_now_price_total">价格合计</string>
+    <string name="buy_right_now_receiver">收货人：</string>
+    <string name="buy_right_now_phone">手机号：</string>
+    <string name="buy_right_now_pay_way">支付方式</string>
+    <string name="buy_right_now_weixin_pay">微信支付</string>
+    <string name="buy_right_now_alipay">支付宝支付</string>
+    <string name="buy_right_now_wallet_pay">钱包支付</string>
+    <string name="buy_right_now_total">总计</string>
+    <string name="buy_right_now_submit">确认下单</string>
+    <string name="pay_success_title_center">支付成功</string>
+    <string name="pay_success_notice_str">您已经支付成功</string>
+    <string name="buy_address_receiver_str">收货人</string>
+    <string name="buy_address_receiver_number_str">手机号</string>
+    <string name="buy_address_info_detail">地址</string>
+    <string name="buy_address_select_title_center">选择收货地址</string>
+    <string name="buy_address_add">添加新地址</string>
+    <string name="buy_address_edit_title_center">编辑收货地址</string>
+    <string name="buy_address_receiver_name_hint">请入输收货人姓名</string>
+    <string name="buy_address_receiver_number_hint">请输入收货人电话号码</string>
+    <string name="buy_address_receiver_detail_info_hint">请输入收货人详细地址</string>
+    <string name="buy_address_edit">修改</string>
+    <string name="buy_address_add_item">添加</string>
+    <string name="buy_right_now_deposit"><Data><![CDATA[押金：<font color=red>¥%1$s</font>]]></Data></string>
+    <string name="buy_right_now_rent"><Data><![CDATA[租金：<font color=red>¥%1$s</font> /月]]></Data></string>
+    <string name="buy_right_now_discount_price"><Data><![CDATA[优惠价：<font color=red>¥%1$.2f</font>]]></Data></string>
+    <string name="buy_right_now_total_price"><Data><![CDATA[总计 <font color=red>¥%1$.2f</font>]]></Data></string>
+    <string name="buy_right_now_pay_success">购买成功</string>
+    <string name="buy_right_now_pay_failure">购买失败</string>
+    <string name="buy_right_now_pay_cancel">支付取消</string>
+    <!-- 购买流程being-->
+    <string name="buy_procedure_title_center">详情</string>
+    <string name="buy_procedure_talk">私聊</string>
+    <string name="buy_procedure_share">分享</string>
+    <string name="buy_procedure_like_num">%1$d人喜欢了</string>
+    <string name="buy_procedure_comment_num">评论（%1$d）</string>
+    <string name="buy_procedure_want">我想要</string>
+    <string name="action_more_arrow">更多 ></string>
+
+    <string name="love_item_user_title_center">TA们也喜欢了</string>
+    <!-- 购买流程end-->
+
+    <!--手机验证-->
+    <string name="phone_number">手机号：</string>
+    <string name="verification_code">验证码：</string>
+    <string name="phone_verification">手机验证</string>
+    <string name="verify_phone_number_isnullornophone">手机号码不正确，请重输入</string>
+    <string name="verify_phone_number">如果未收到验证码，请确认手机号码是否填写正确</string>
+    <string name="phone_number_get_verification_code">手机号码获取验证码</string>
+    <string name="input_verification_code">请输入验证码</string>
+    <string name="get_verification_code_sms">获取验证码短信</string>
+    <string name="next_step">下一步</string>
+    <string name="input_user_password">请输入用户密码</string>
+    <string name="input_password">输入密码</string>
+    <string name="set_password">设置密码：</string>
+    <string name="verify_password_again">再次输入密码确认</string>
+    <string name="verify_password">确认密码：</string>
+    <string name="password_restriction">密码限6个数字</string>
+
+    <!-- 消息 -->
+    <string name="title_addlygroup">入群申请</string>
+    <string name="title_addgroup">群信息</string>
+    <string name="title_message">消息</string>
+    <string name="title_image">照片</string>
+    <string name="new_sub_group">建子群</string>
+    <string name="search">搜索</string>
+    <string name="hongbao">红包</string>
+    <string name="snap">阅后即焚</string>
+    <string name="transfer">转账</string>
+    <string name="flower">实物鲜花</string>
+    <string name="gift">实物礼物</string>
+    <string name="location">位置</string>
+    <string name="send">发送</string>
+    <string name="str_group">群组</string>
+
+    <string name="send_hongbao">发红包</string>
+    <string name="transfer_detail">转帐详情</string>
+    <string name="system_message">系统消息</string>
+
+
+
+    <!-- 改价 -->
+    <string name="enter_the_amount">请输入金额</string>
+    <string name="title_activity_event">EventActivity</string>
+
+    <!-- 活动 -->
+    <string name="event_detail_title">活动详情</string>
+    <string name="publicitem_dicrib">活动</string>
+    <string name="event_detail_enroll_title">我要报名</string>
+    <string name="event_enroll_mobile">手机号码</string>
+    <string name="event_enroll_name">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名</string>
+    <string name="event_enroll_address">地&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;址</string>
+    <string name="event_enroll_input_mobile">请输入手机号码</string>
+    <string name="event_enroll_input_name">请输入姓名</string>
+    <string name="event_enroll_input_address">请输入地址</string>
+    <string name="event_enroll_submit">提交</string>
+    <string name="event_enroll_success">报名成功</string>
+    <string name="event_enroll_failure">报名失败</string>
+    <string name="event_enroll_check_mobile">请输入手机号码</string>
+    <string name="event_enroll_check_name">请输入姓名</string>
+    <string name="event_enroll_check_address">请输入地址</string>
+    <string name="event_enroll_success_title_center">报名成功</string>
+    <string name="event_enroll_success_msg">你已经报名成功</string>
+    <string name="event_enroll_submiting_str">正在提交，请稍候.....</string>
+
+    <!-- 我的 -->
+    <string name="my_jieyixia_no">借一下号：%1$s</string>
+    <string name="my_remark">备注：%1$s</string>
+    <string name="balance">零钱</string>
+    <string name="bank_card">银行卡</string>
+    <string name="balance_format">￥%1$.2f</string>
+    <string name="follow">关注</string>
+    <string name="fans">粉丝</string>
+    <string name="borrowing">已借入</string>
+    <string name="already_rental">已租出</string>
+
+    <!--我的资料-->
+    <string name="perfect_information">完善信息</string>
+    <string name="personal_info">我的资料</string>
+    <string name="personal_info_portrait">头像</string>
+    <string name="perosnal_info_nickname">昵称</string>
+    <string name="personal_info_gender">性别</string>
+    <string name="personal_info_birthday">生日</string>
+    <string name="personal_info_signature">个性签名</string>
+    <string name="personal_info_change_background">更换背景</string>
+
+    <!-- 我的借出 -->
+    <string name="my_rental">我的借出</string>
+    <string name="change_price">改价</string>
+    <string name="confirm_return">确认归还</string>
+
+    <!-- 我的借入 -->
+    <string name="my_borrow">我的借入</string>
+    <string name="my_borrow_stop">不想借了</string>
+    <string name="my_borrow_pay">付款</string>
+
+    <!-- 建子群 -->
+    <string name="title_dissmis">确定</string>
+    <string name="title_new_sub_group">建子群</string>
+    <string name="merge_groups">合并其他群到此处</string>
+    <string name="direct_add_contact">建子群(直接添加联系人)</string>
+
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <!--发布 begin -->
+    <string name="publish_item_title_center">动态发布</string>
+    <string name="picture_select_max_notice">亲，最多只可以选择九张图片喔！</string>
+    <string name="publish_item_name_notice">产品名称不能为空</string>
+    <string name="publish_item_describe_notice">产品描述不能为空</string>
+    <string name="publish_item_area">产品所在地不能为空</string>
+    <string name="publish_item_feature">产品成色不能为空</string>
+    <string name="publish_item_stockNumber">产品数量不能为空</string>
+    <string name="publish_item_fetch_type">取物方式不能为空</string>
+    <string name="publish_item_type">产品分类不能为空</string>
+    <string name="publish_item_price_notice">原价不能为空</string>
+    <string name="publish_item_deposit_notice">押金不能为空</string>
+    <string name="publish_item_rent_notice">租金不能为空</string>
+    <string name="publish_item_rent_discount">优惠价不能为空</string>
+    <string name="publish_item_rent_present">备注不能为空</string>
+    <string name="publish_item_can_modify">发布后可自由更改</string>
+
+    <string name="publish_dynamic_theme_notice">主题不能为空！！</string>
+    <string name="publish_dynamic_description_notice">描述不能为空！！！</string>
+    <!-- 发布 end -->
+
+    <string name="add_follow">添加关注</string>
+    <string name="cancel_follow">取消关注</string>
+    <string name="invite_sms_content">[借一下]欢迎您使用闲置的物品进行转让，租借平台，快来注册吧！</string>
+    <string name="friend">好友</string>
+    <string name="apply_friend">好友申请</string>
+    <string name="contact_friend">通讯录好友</string>
+    <string name="group_name">群名称</string>
+    <string name="group_notice">群通知</string>
+</resources>

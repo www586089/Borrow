@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_back"
+        style="@style/Widget.AppCompat.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:gravity="center"
+        android:text="@string/action_back"
+        android:textSize="@dimen/abc_text_size_title_material_toolbar"
+        android:textColor="?android:attr/textColorPrimary"
+        android:drawableLeft="@drawable/ic_action_previous_item"
+        android:paddingLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+    <LinearLayout
+        android:id="@+id/rl_title_center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:text="接一下"
+            android:textSize="22sp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_selected_count"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/ease_unread_dot"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>

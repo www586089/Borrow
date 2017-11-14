@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:padding="5dp"
+                android:clickable="true"
+                android:background="@drawable/list_item_background"
+>
+
+    <RelativeLayout
+        android:id="@+id/rl_avatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+    >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            fresco:actualImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/icon_placeholder"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:progressBarImage="@mipmap/icon_progress_bar"
+            fresco:progressBarImageScaleType="centerInside"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:failureImage="@mipmap/icon_failure"
+            fresco:failureImageScaleType="centerInside"
+            fresco:roundedCornerRadius="30dp"
+            fresco:roundingBorderWidth="1dp"
+            fresco:roundingBorderColor="@color/white"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"
+        />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rl_avatar"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+    >
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/text_black"
+            android:layout_toLeftOf="@+id/tv_new_sub_group"
+            android:layout_alignParentLeft="true"
+            tools:text="你是我的唯一贝拉花房永恒经典的玫瑰花"
+        />
+
+
+
+        <TextView
+            android:id="@+id/tv_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/red"
+            android:paddingRight="5dp"
+            android:layout_toLeftOf="@+id/iv_no_disturb"
+            android:layout_below="@id/tv_description"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            tools:text="07:40"
+        />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_yellow_round_selector"
+            android:text="赠送"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="@dimen/text_normal"
+            android:id="@+id/tv_sure"
+            android:layout_below="@id/tv_description"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

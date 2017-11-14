@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="dp">10dp</dimen>
+    <dimen name="text_smaller">12sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_normal">16sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_larger">22sp</dimen>
+    <dimen name="text_size30">30sp</dimen>
+    <dimen name="text_size35">35sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="view_pager_margin">6dp</dimen>
+    <dimen name="event_pic_height">120dp</dimen>
+
+    <dimen name="space_4">4.0dip</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="selectcity_group_item_padding">14dp</dimen>
+    <dimen name="bladeview_popup_height">80dp</dimen>
+
+    <dimen name="bladeview_fontsize">12sp</dimen>
+    <dimen name="bladeview_popup_fontsize">20sp</dimen>
+</resources>

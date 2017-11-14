@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    android:paddingTop="2dip"
+    android:paddingBottom="2dip"
+    android:textColor="@color/text_black"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:padding="10dp"
+        android:textColor="@color/text_black"
+        android:background="@drawable/list_cell_event_bg_normal"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_notive_cell_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_normal"
+            android:text="2015-07-20 07:00"
+            android:gravity="center"
+            android:layout_marginBottom="10dip"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/tv_notive_cell_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:layout_marginBottom="10dip"
+            android:textColor="@android:color/black"/>
+        <View android:background="@color/line_background"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+                android:id="@+id/tv_notive_cell_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="内容"
+                android:textColor="@android:color/black"
+                />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <!-- 选择 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dip"
+        android:paddingTop="15dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip">
+        <RadioGroup
+            android:id="@+id/rg_rent_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rb_rent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="租借"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_normal"
+                android:checked="true" />
+            <RadioButton
+                android:id="@+id/rd_transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_normal"
+                android:text="转让"
+                android:checked="false" />
+            <RadioButton
+                android:id="@+id/rb_handset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="赠送"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_normal"
+                android:checked="false" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rg_rent_select"
+            android:textSize="@dimen/text_smaller"
+            android:textColor="@color/red"
+            android:layout_alignParentRight="true"
+            android:text="@string/publish_item_can_modify"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 押金容器-->
+        <LinearLayout
+            android:id="@+id/ll_contain_transfer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+            <!-- 押金-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dip"
+                android:paddingLeft="15dip"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dip" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:text="押金(￥)"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_normal"/>
+                <EditText
+                    android:id="@+id/et_item_deposit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dip"
+                    android:textColorHint="@color/text_gray"
+                    android:background="@color/white"
+                    android:cursorVisible="true"
+                    android:gravity="center_vertical|left"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:hint="请输入价格"
+                    android:paddingRight="15dip"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_normal"/>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dip"
+                android:background="@color/list_divider_color" />
+            <!-- 租金-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dip"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="租金(￥)"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_normal"/>
+                <EditText
+                    android:id="@+id/et_item_rentmoney"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/text_gray"
+                    android:background="@color/white"
+                    android:cursorVisible="true"
+                    android:gravity="center_vertical|left"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:hint="请输入价格/月"
+                    android:paddingRight="15dip"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_normal" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/list_divider_color" />
+        </LinearLayout>
+
+        <!-- 优惠容器-->
+        <LinearLayout
+            android:id="@+id/ll_contain_preferential"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <!-- 优惠价-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="10dip"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+                <TextView
+                    android:id="@+id/tv_preferential"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="优惠价(￥)"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_normal"/>
+                <EditText
+                    android:id="@+id/et_preferential"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:cursorVisible="true"
+                    android:layout_marginLeft="8dip"
+                    android:background="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|left"
+                    android:textColorHint="@color/text_gray"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:hint="请输入优惠价"
+                    android:paddingRight="15dip"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_normal"/>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/list_divider_color" />
+        </LinearLayout>
+
+        <!-- 赠送容器-->
+        <LinearLayout
+            android:id="@+id/ll_contain_handsel"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <!-- 优惠价-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:paddingLeft="15dip"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/publish_item_present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="请吃饭 "
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_normal"/>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/list_divider_color" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by zfang on 2015/10/31.. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    android:orientation="vertical">
+    <include layout="@layout/view_toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:text="@string/event_enroll_mobile"
+                android:textSize="16sp"
+                android:textColor="@color/text_black"/>
+            <EditText
+                android:id="@+id/et_event_enroll_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:hint="@string/event_enroll_input_mobile"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:maxLength="11"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/text_gray"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="2dp"
+            android:background="@color/list_divider_color" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dip"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:text="@string/event_enroll_name"
+                android:textSize="16sp"
+                android:textColor="@color/text_black"/>
+
+            <EditText
+                android:id="@+id/et_event_enroll_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:hint="@string/event_enroll_input_name"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/text_gray"
+                android:text=""
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="2dp"
+            android:background="@color/list_divider_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:text="@string/event_enroll_address"
+                android:textSize="16sp"
+                android:textColor="@color/text_black"/>
+
+            <EditText
+                android:id="@+id/et_event_enroll_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="@string/event_enroll_input_address"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/text_gray"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="2dp"
+            android:background="@color/list_divider_color" />
+        <RelativeLayout
+            android:id="@+id/rl_event_enroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dip"
+            android:clickable="true">
+            <Button
+                android:id="@+id/btn_event_enroll"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_yellow_round_selector"
+                android:text="@string/event_enroll_submit"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

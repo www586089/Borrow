@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tv_my_wallet_item_price"
+        style="@style/BigBlackTextView"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="-200"
+        android:textColor="@color/green_price"/>
+
+    <TextView
+        android:id="@+id/tv_my_wallet_item_name"
+        android:layout_toLeftOf="@id/tv_my_wallet_item_price"
+        android:layout_alignParentLeft="true"
+        style="@style/NormalBlackTextView"
+        android:text="购买转租商品" />
+
+    <TextView
+        android:id="@+id/tv_my_wallet_item_time"
+        style="@style/SmallGrayTextView"
+        android:layout_toLeftOf="@id/tv_my_wallet_item_price"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_my_wallet_item_name"
+        android:layout_marginTop="2dp"
+        android:text="2015-10-10 08:20" />
+</RelativeLayout>

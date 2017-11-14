@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/icon_publish_success" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/text_gray" />
+
+        <TextView
+            style="@style/BigBlackTextView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="分享给其他人吧" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/text_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        style="@style/MatchView"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_share_wechat"
+            style="@style/SmallGrayTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:drawableTop="@mipmap/icon_share_wechat"
+            android:gravity="center_horizontal"
+            android:text="微信" />
+
+        <TextView
+            android:id="@+id/tv_share_weibo"
+            style="@style/SmallGrayTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:drawableTop="@mipmap/icon_share_sina_weibo"
+            android:gravity="center_horizontal"
+            android:text="微博" />
+
+        <TextView android:visibility="gone"
+        android:id="@+id/tv_share_qq"
+        style="@style/SmallGrayTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="6dp"
+        android:drawableTop="@mipmap/icon_share_qq"
+        android:gravity="center_horizontal"
+        android:text="QQ空间" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btn_continue_publish"
+        style="@style/GrayBorderMatchButton"
+        android:text="继续发布"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        style="@style/SmallGrayTextView"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="您可以发布："/>
+
+    <TextView
+        style="@style/SmallGrayTextView"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:text="伞、移动电源、闲置手机、书籍、衣服鞋帽、体育用品、数码用品、必需品、玩具、五金工具、奢侈品..."/>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000"
+    >
+    <LinearLayout
+        android:id="@+id/llw"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/changge"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="更换封面背景"
+        android:gravity="center"
+            android:textSize="14sp"
+        android:textColor="@color/black"
+        android:background="#ffffffff"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/list_divider"/>
+        <TextView
+            android:id="@+id/dissmis"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="取消"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="#ffffffff"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

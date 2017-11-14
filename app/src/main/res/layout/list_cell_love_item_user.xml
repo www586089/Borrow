@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_likelists_img"
+            android:layout_gravity="center_vertical|left"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            fresco:actualImageScaleType="centerInside"
+            fresco:roundedCornerRadius="30dp"
+            fresco:roundingBorderWidth="1dp"
+            fresco:roundingBorderColor="@color/white"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/me_photo_2x_81" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_vertical|left"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/text_black"
+                android:text="测试"
+                android:singleLine="true"
+                android:id="@+id/tv_likelists_name" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/text_gray"
+                android:text="测试测试1"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/tv_likelists_note" />
+        </LinearLayout>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_follow"
+            android:textColor="@color/text_gray"
+            android:textSize="16sp"
+            android:background="@drawable/bg_unfollow"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginRight="15dp"
+            />
+    </LinearLayout>
+    <View android:layout_marginTop="7dp"
+        android:background="@color/line_background" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

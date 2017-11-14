@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F1F1">
+
+    <include layout="@layout/view_toolbar" />
+
+    <LinearLayout
+        style="@style/HorizontalMatchLinearLayout"
+        android:background="@drawable/list_item_background"
+        android:clickable="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            style="@style/NormalBlackTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@mipmap/icon_gender_male"
+            android:gravity="center_vertical"
+            android:text="帅哥" />
+
+        <CheckBox
+            android:id="@+id/cb_editgender_male"
+            style="@style/CommonCheckBox"
+            android:checked="true"
+            android:clickable="true" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/HorizontalMatchLinearLayout"
+        android:background="@drawable/list_item_background"
+        android:clickable="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            style="@style/NormalBlackTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@mipmap/icon_gender_female"
+            android:gravity="center_vertical"
+            android:text="美女" />
+
+        <CheckBox
+            android:id="@+id/cb_editgender_female"
+            style="@style/CommonCheckBox"
+            android:clickable="true"
+            android:checked="false"/>
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_editgender_ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_yellow_round_selector"
+        android:text="@string/ok"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

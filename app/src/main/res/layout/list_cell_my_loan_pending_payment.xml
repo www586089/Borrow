@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Created by gaobo on 2015/11/05.我的借出 待付款 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp" >
+
+    <ImageView
+        android:id="@+id/img_treasure_avator"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/me_photo_2x_81"/>
+
+    <TextView
+        android:id="@+id/tv_treasure_name"
+        android:layout_width="wrap_content"
+        android:layout_height="48dip"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/img_treasure_avator"
+        android:textColor="#576B95"
+        android:textSize="@dimen/text_large"
+        android:text="公主爱漂亮" />
+
+
+    <TextView
+        android:id="@+id/tv_treasure_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_treasure_name"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/text_normal"
+        android:textColor="@color/text_gray"
+        android:layout_toRightOf="@id/img_treasure_avator"
+        android:text="这里有多美，你们自己看，设计团队的呕心沥作，穿到身上的瞬间发光，昂贵的亲服极了~~"
+        android:autoLink="web" />
+
+    <com.jyx.android.widget.view.NoScrollGridView
+        android:id="@+id/gd_treasure_photos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_treasure_description"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@id/img_treasure_avator"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:visibility="gone"
+        android:verticalSpacing="1dp" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@id/gd_treasure_photos"
+        android:layout_marginTop="5dp"
+        android:background="@color/list_divider_color" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_treasure_op"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_marginTop="10dip"
+        android:alpha="0.8"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@id/view_line">
+
+
+        <TextView
+            android:id="@+id/tv_person"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/me_photo_2x_81"
+            android:drawablePadding="10dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_smaller"
+            android:text="张三" />
+
+        <TextView
+            android:id="@+id/tv_treasure_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/icon_rental_tv_drawable"
+            android:drawablePadding="10dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_smaller"
+            android:text="私聊" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_yellow_round_selector"
+            android:text="不想借了"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_change"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_yellow_round_selector"
+            android:text="付款"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

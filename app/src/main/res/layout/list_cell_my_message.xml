@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp" >
+
+    <ImageView
+        android:id="@+id/avator"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/me_photo_2x_81"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/avator"
+        android:textColor="#576B95"
+        android:textSize="13sp"
+        android:text="深圳大学03届1班" />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:textColor="#818181"
+        android:textSize="13sp"
+        android:text="建子群" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/avator"
+        android:layout_below="@+id/name"
+        >
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#818181"
+        android:text="李四：简简单单就好" />
+
+
+
+    <!--<com.jyx.android.widget.view.NoScrollGridView-->
+        <!--android:id="@+id/gridView"-->
+        <!--android:layout_width="245dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/content"-->
+        <!--android:horizontalSpacing="1dp"-->
+        <!--android:numColumns="3"-->
+        <!--android:stretchMode="columnWidth"-->
+        <!--android:visibility="gone"-->
+        <!--android:verticalSpacing="1dp" />-->
+    <!--android:layout_below="@+id/content"-->
+
+    <TextView
+        android:id="@+id/zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:textColor="#576B95"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/content"
+        android:text="2015-11-14 22:04" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 发现模块 -->
+
+
+    <string name="toolbar_title_discovery_publish_success">发布成功</string>
+    <string name="toolbar_title_action_done">完成</string>
+</resources>

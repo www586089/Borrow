@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">library-umengshare</string>
+    <string name="oauth_fail">授权失败</string>
+    <string name="oauth_cancel">授权取消</string>
+</resources>

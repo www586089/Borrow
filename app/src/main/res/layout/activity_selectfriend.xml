@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f6f6"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include layout="@layout/view_toolbar"/>
+    <LinearLayout
+        android:id="@+id/select_friends_content_ll"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/et_selectfriend_search"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="搜索"
+            android:gravity="left"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/tree_black"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/lv_selectfriend_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/tv_selectfriend_dialog"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/select_friend_dialog_background"
+                android:gravity="center"
+                android:padding="5dip"
+                android:textColor="#2f2725"
+                android:textSize="35.0dip"
+                android:visibility="invisible" />
+
+            <com.jyx.android.base.MyLetterView
+                android:id="@+id/lv_selectfriend_right_letter"
+                android:layout_width="25dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/pb_loading"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        wheel:barColor="@color/main_yellow"
+        wheel:progressIndeterminate="true"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

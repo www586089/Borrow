@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:padding="5dp"
+                android:background="@drawable/list_item_background"
+>
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/text_black"
+            android:layout_toLeftOf="@+id/tv_new_sub_group"
+            android:layout_alignParentLeft="true"
+            tools:text="桃园居"
+        />
+
+
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            android:paddingRight="5dp"
+            android:layout_toLeftOf="@+id/iv_no_disturb"
+            android:layout_below="@id/tv_description"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            tools:text="深圳市南山区桃源村"
+        />
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/iv_ok"
+               android:visibility="invisible"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:background="@mipmap/icon_sure"
+    />
+    </RelativeLayout>

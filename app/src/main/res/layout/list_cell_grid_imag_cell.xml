@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/album_image"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:maxWidth="80dip"
+    android:maxHeight="80dip"
+    android:minHeight="80dip"
+    android:minWidth="80dip"
+    android:scaleType="fitXY"
+    android:src="@mipmap/icon_loading" />
+
+<!--<com.facebook.drawee.view.SimpleDraweeView-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:fresco="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/album_image"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--fresco:placeholderImage="@mipmap/icon_alipay" />-->
+
+

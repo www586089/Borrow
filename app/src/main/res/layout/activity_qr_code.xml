@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="@color/window_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/iv_user_avatar"
+            android:layout_gravity="center_vertical|left"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            fresco:actualImageScaleType="centerInside"
+            fresco:roundedCornerRadius="30dp"
+            fresco:roundingBorderWidth="1dp"
+            fresco:roundingBorderColor="@color/white"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/me_photo_2x_81" />
+        <TextView
+            android:id="@+id/tv_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/qe_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="扫一扫二维码，添加我为好友。"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/text_small" />
+
+</LinearLayout>

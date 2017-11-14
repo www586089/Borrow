@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:padding="5dp"
+                android:clickable="true"
+                android:background="@drawable/list_item_background"
+>
+
+    <RelativeLayout
+        android:id="@+id/rl_avatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+    >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            fresco:actualImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/icon_placeholder"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:progressBarImage="@mipmap/icon_progress_bar"
+            fresco:progressBarImageScaleType="centerInside"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:failureImage="@mipmap/icon_failure"
+            fresco:failureImageScaleType="centerInside"
+            fresco:roundedCornerRadius="30dp"
+            fresco:roundingBorderWidth="1dp"
+            fresco:roundingBorderColor="@color/white"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"
+        />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_maneg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rl_avatar"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+    >
+
+        <TextView
+            android:id="@+id/tv_conversation_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/text_black"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/tv_new_sub_group"
+            android:layout_alignParentLeft="true"
+            tools:text="深圳大学"
+        />
+
+
+
+        <TextView
+            android:id="@+id/tv_last_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text_gray"
+            android:paddingRight="5dp"
+            android:layout_toLeftOf="@+id/iv_no_disturb"
+            android:layout_below="@id/tv_conversation_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            tools:text="申请人"
+        />
+
+
+
+        <TextView android:id="@+id/tv_cancel"
+                android:text="拒绝"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:background="@drawable/btn_grey_border_selector"
+                android:layout_alignBottom="@id/tv_last_msg"
+                android:layout_width="wrap_content"
+                  android:gravity="center"
+                  android:padding="5dp"
+                  android:clickable="true"
+                android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/tv_ok"
+                android:text="同意"
+                  android:clickable="true"
+                android:layout_toLeftOf="@id/tv_cancel"
+                android:textColor="@color/black"
+                android:background="@drawable/btn_grey_border_selector"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignBottom="@id/tv_last_msg"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:text="等待审核"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:clickable="false"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/gray_btn_bg_pressed_color"
+            android:layout_alignBottom="@id/tv_last_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_alignBottom="@id/rl_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/list_divider_holo_light" />
+
+</RelativeLayout>

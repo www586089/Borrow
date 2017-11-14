@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_my_borrow"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_background"
+    android:clickable="true"
+    android:layout_marginLeft="6dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small"
+            android:gravity="center_vertical"
+            android:text="订单号："
+            />
+
+        <TextView
+            android:id="@+id/tv_my_borrow_orderid"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small"
+            android:gravity="center_vertical"
+            android:text="订单号"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small"
+            android:gravity="center_vertical"
+            android:text="时间："
+            />
+
+        <TextView
+            android:id="@+id/tv_my_borrow_ordertime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small"
+            android:gravity="center_vertical"
+            android:text="时间"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/list_divider_holo_light"
+        android:layout_alignParentTop="true"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_my_borrow_good"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="fitXY"
+            fresco:actualImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/icon_placeholder"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:progressBarImage="@mipmap/icon_progress_bar"
+            fresco:progressBarImageScaleType="centerInside"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:failureImage="@mipmap/icon_failure"
+            fresco:failureImageScaleType="centerInside"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_my_borrow_itemname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_normal"
+                android:singleLine="true"
+                android:text="名称"
+                />
+
+            <TextView
+                android:id="@+id/tv_my_borrow_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_small"
+                android:maxLines="2"
+                android:text="描述\n描述"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_my_borrow_rent"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/text_black"
+                    android:paddingBottom="5dp"
+                    android:text="押金："
+                    />
+
+                <TextView
+                    android:id="@+id/tv_my_borrow_deposit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/red"
+                    android:paddingBottom="5dp"
+                    android:text="押金"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/text_black"
+                    android:paddingBottom="5dp"
+                    android:text="租金："
+                    />
+
+                <TextView
+                    android:id="@+id/tv_my_borrow_rent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/red"
+                    android:paddingBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="租金"
+                    />
+                <TextView
+                    android:id="@+id/tv_my_borrow_renttype"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/text_black"
+                    android:paddingBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="/月"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_my_borrow_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/text_black"
+                android:text="状态"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/list_divider_holo_light"
+        android:layout_alignParentTop="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_operate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small"
+            android:gravity="center_vertical"
+            android:text="实付："
+            />
+
+        <TextView
+            android:id="@+id/tv_my_borrow_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_small"
+            android:gravity="center_vertical"
+            android:text="￥200.00"
+            />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_my_borrow_person"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            fresco:actualImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/icon_placeholder"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:progressBarImage="@mipmap/icon_progress_bar"
+            fresco:progressBarImageScaleType="centerInside"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:failureImage="@mipmap/icon_failure"
+            fresco:failureImageScaleType="centerInside"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/tv_my_borrow_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_my_borrow_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small"
+            android:drawableLeft="@drawable/icon_rental_tv_drawable"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/buy_procedure_talk"
+            />
+        <Button
+            android:id="@+id/btn_my_borrow_stop"
+            style="@style/YellowBtn"
+            android:text="@string/my_borrow_stop"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_my_borrow_pay"
+            style="@style/YellowBtn"
+            android:text="@string/my_borrow_pay"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn_my_borrow_confirm_return"
+            style="@style/YellowBtn"
+            android:text="@string/confirm_return"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:background="@color/list_divider_color"
+        />
+
+</LinearLayout>

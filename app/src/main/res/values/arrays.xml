@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_tab">
+        <item>消息</item>
+        <item>动态</item>
+        <item>租借</item>
+        <item>群·动态</item>
+        <item>群·租借</item>
+        <item>关系</item>
+    </string-array>
+
+
+    <string-array name="chat_person_tab">
+        <item>消息</item>
+        <item>动态</item>
+        <item>租借</item>
+    </string-array>
+
+    <string-array name="chat_group_tab">
+        <item>关系</item>
+        <item>消息</item>
+        <item>群.动态</item>
+        <item>群.租借</item>
+        <item>成员</item>
+        <item>通知</item>
+    </string-array>
+
+
+    <string-array name="discorvery_tab">
+        <item>租借</item>
+        <item>群租借</item>
+        <item>活动</item>
+    </string-array>
+    
+    <string-array name="me_tab">
+        <item>我的动态</item>
+        <item>我的租借</item>
+        <item>我喜欢的</item>
+    </string-array>
+
+    <string-array name="other_tab">
+        <item>TA的动态</item>
+        <item>TA的租借</item>
+        <item>TA喜欢的</item>
+    </string-array>
+
+    <string-array name="my_rental_tab">
+        <item>待付款</item>
+        <item>已借出</item>
+        <item>已还</item>
+    </string-array>
+
+    <string-array name="my_borrow_tab">
+        <item>待付款</item>
+        <item>已借入</item>
+        <item>已还</item>
+    </string-array>
+
+    <string-array name="contact_tab">
+        <item>好友</item>
+        <item>群聊</item>
+        <item>关注</item>
+        <item>粉丝</item>
+        <item>通讯录</item>
+    </string-array>
+
+    <string-array name="group_tab">
+        <item>关系</item>
+        <item>消息</item>
+        <item>群·动态</item>
+        <item>群·租借</item>
+        <item>成员</item>
+        <item>通知</item>
+    </string-array>
+
+</resources>

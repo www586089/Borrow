@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_cell_event_item_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:textColor="@color/text_black"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/text_black"
+        android:gravity="center_horizontal"
+        android:background="@drawable/list_cell_event_bg_normal"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_event_special_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我要报名"
+            android:textSize="@dimen/text_size30"
+            android:gravity="center_horizontal"
+            android:textColor="@color/main_yellow"/>
+    </LinearLayout>
+</LinearLayout>

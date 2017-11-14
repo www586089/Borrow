@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:text="红包个数"
+            android:textSize="16sp"
+            android:textColor="@color/text_black"
+            android:id="@+id/tv_redenvelope_number" />
+
+        <EditText
+            android:id="@+id/et_redenvelope_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:drawablePadding="10dp"
+            android:background="@null"
+            android:hint="填写个数"
+            android:singleLine="true"
+            android:inputType="number"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_gray"
+            android:textCursorDrawable="@null"
+            android:gravity="center_vertical|right"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="个"
+            android:textSize="16sp"
+            android:textColor="@color/text_black"
+            android:id="@+id/tv_redenvelope_number_unit" />
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="50dp"
+              android:text="本群共12人"
+              android:paddingLeft="16dp"
+              android:gravity="center_vertical"
+              android:textColor="@color/gray"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:text="每个红包金额"
+            android:textSize="16sp"
+            android:textColor="@color/text_black"
+            android:id="@+id/tv_redenvelope_amount" />
+
+        <EditText
+            android:id="@+id/et_redenvelope_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:drawablePadding="10dp"
+            android:background="@null"
+            android:hint="@string/redenvelope_input_amount"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_gray"
+            android:textCursorDrawable="@null"
+            android:gravity="center_vertical|right"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/redenvelope_amount_unit"
+            android:textSize="16sp"
+            android:textColor="@color/text_black"
+            android:id="@+id/tv_redenvelope_amount_unit" />
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="50dp"
+              android:text="每人抽到金额随机"
+              android:paddingLeft="16dp"
+              android:gravity="center_vertical"
+              android:textColor="@color/gray"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_redenvelope_msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:drawablePadding="10dp"
+            android:background="@null"
+            android:text="@string/redenvelope_msg"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textCursorDrawable="@null"
+            android:gravity="center_vertical|left"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@color/transparent"
+        android:text="￥0.00"
+        android:textSize="18sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/text_black"
+        android:id="@+id/tv_redenvelope_amount_txt" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/btn_yellow_round_selector"
+        android:text="@string/redenvelope_btn_text"
+        android:textSize="16sp"
+        android:id="@+id/btn_redenvelope_send"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="save_data_error">保存数据失败</string>
+
+    <!-- 添加银行卡-->
+    <string name="toolbar_title_addcard">添加银行卡</string>
+    <string name="addcard_title">请输入绑定卡本人的银行卡号</string>
+    <string name="addcard_username">持卡人</string>
+    <string name="addcard_username_hint">请输入持卡人姓名</string>
+    <string name="addcard_cardno">卡   号</string>
+    <string name="addcard_cardno_hint">请输入卡号</string>
+    <string name="addcard_bindnow">立即绑定</string>
+
+    <!-- 发红包-->
+    <string name="toolbar_title_redenvelope">发红包</string>
+    <string name="redenvelope_amount">金额</string>
+    <string name="redenvelope_input_amount">填写金额</string>
+    <string name="redenvelope_amount_unit">元</string>
+    <string name="redenvelope_msg">恭喜发财，大吉大利！</string>
+    <string name="redenvelope_btn_text">塞钱进红包</string>
+
+    <!-- 修改密码-->
+    <string name="toolbar_title_changepassword">密码修改</string>
+    <string name="changepassword_old_password">旧密码</string>
+    <string name="changepassword_old_password_hint">请输入旧密码</string>
+    <string name="changepassword_new_password1">新密码</string>
+    <string name="changepassword_new_password_hint1">纯数字6位</string>
+    <string name="changepassword_new_password2">重复密码</string>
+    <string name="changepassword_new_password_hint2">重复输入一次新密码</string>
+    <string name="changepassword_save">保存</string>
+
+    <!-- 支付密码-->
+    <string name="toolbar_title_paythepassword">支付密码</string>
+    <string name="paythepassword_title">请输入支付密码，以认证身份</string>
+    <string name="paythepassword_cancel">取消</string>
+    <string name="paythepassword_ok">确定</string>
+
+    <!-- 实物鲜花-->
+    <string name="toolbar_title_realflower">实物鲜花</string>
+
+    <!-- 喜欢人列表-->
+    <string name="toolbar_title_likelists">TA们也喜欢</string>
+
+    <!-- 评价列表-->
+    <string name="toolbar_title_commentlists">评价列表</string>
+    <string name="commentlists_input">请输入您的评价</string>
+    <string name="commentlists_button">发表</string>
+
+    <!-- @多人列表-->
+    <string name="toolbar_title_selectfriend">好友</string>
+
+    <!-- 微信支付-->
+    <string name="toolbar_title_weixinpay">确认支付</string>
+    <string name="weixinpay_title">借一下支付</string>
+    <string name="weixinpay_bottom_title">支付安全由中国人民财产保险股份有限公司承保</string>
+    <string name="weixinpay_payee_title">收款方</string>
+    <string name="weixinpay_goods_title">商  品</string>
+    <string name="weixinpay_paynow">立即支付</string>
+
+    <!-- 微信支付-->
+    <string name="toolbar_title_userinfor">信息</string>
+    <string name="userinfor_attention">+关注</string>
+    <string name="userinfor_chat">私聊</string>
+
+    <string name="background_set">更新背景</string>
+    <string name="portrait_set">更新头像</string>
+
+    <string name="toolbar_title_birthday">更新生日</string>
+    <string name="birthday_set">输入生日</string>
+    <string name="birthday_save">更新生日</string>
+
+    <string name="toolbar_title_setting">系统设置</string>
+    <string name="toolbar_title_about">关于</string>
+    <string name="suggestion_save">提交</string>
+    <string name="suggestion_hint">请输入您的建议或反馈</string>
+
+    <string name="withdraw_balance">余   额</string>
+    <string name="withdraw_amount">金  额</string>
+    <string name="withdraw_amount_hint">请输入提现金额</string>
+    <string name="withdraw_amount_btn">提  现</string>
+    <string name="withdraw_error_msg">未绑定银行卡不能提现</string>
+    <string name="toolbar_title_withdraw">提现</string>
+
+    <string name="toolbar_title_babymanage">宝贝管理</string>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp"
+    android:background="#F6F6F6">
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/main_tab_chat" />
+
+        <TextView
+            android:id="@+id/tv_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:minWidth="16dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:minHeight="16dp"
+            android:textSize="11sp"
+            android:text="99"
+            android:textColor="@android:color/white"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="哈哈"
+        android:textColor="@color/color_dark_to_yellow"
+        android:textSize="12sp" />
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlNormal">@android:color/darker_gray</item>
+        <item name="colorAccent">@color/main_yellow</item>
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/main_light_yellow</item>
+
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="actionBarSize">48dp</item>
+        <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+        <item name="actionOverflowMenuStyle">@style/LStyled.PopupMenu.OverflowMenu</item>
+        <item name="homeAsUpIndicator">@drawable/ic_action_previous_item</item>
+    </style>
+
+    <style name="LStyled.PopupMenu.OverflowMenu" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <!-- 'overlapAnchor' changes position of the popup -->
+        <!-- true - popup will be shown over the overflow button -->
+        <!-- false - popup will be shown below the overflow button -->
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">@drawable/bg_pop_overflow</item>
+    </style>
+
+
+    <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.Splash" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+
+    <style name="Widget"></style>
+
+    <style name="Widget.JYX"></style>
+
+    <style name="Widget.JYX.ProgressBar" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:indeterminateDrawable">@drawable/progress_medium_holo</item>
+    </style>
+
+    <style name="Widget.JYX.DialogWaiting" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@mipmap/dialog_background</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="rdoBtn_custom">
+        <item name="android:background">@null</item>
+        <item name="android:button">@drawable/rdobtn_custom</item>
+    </style>
+    <style name="rdoBtn_custom_area">
+        <item name="android:background">@null</item>
+        <item name="android:button">@drawable/rdobtn_custom_select_area</item>
+    </style>
+
+    <style name="MeTabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MeTab</item>
+        <item name="tabSelectedTextColor">@color/main_yellow</item>
+    </style>
+
+    <style name="MeTab" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="YellowBtn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@drawable/btn_yellow_round_selector</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">false</item>
+    </style>
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+</resources>

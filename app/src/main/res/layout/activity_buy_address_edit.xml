@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by zfang on 2015/10/31.. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="55dip"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:text="@string/buy_address_receiver_str"
+                android:textSize="16sp"
+                android:textColor="@color/text_black"/>
+
+            <EditText
+                android:id="@+id/et_addcard_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:hint="@string/buy_address_receiver_name_hint"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/text_gray"
+                android:text=""
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="2dp"
+            android:background="@color/list_divider_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="55dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:text="@string/buy_address_receiver_number_str"
+                android:textSize="16sp"
+                android:textColor="@color/text_black"/>
+
+            <EditText
+                android:id="@+id/et_buy_address_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:hint="@string/buy_address_receiver_number_hint"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/text_gray"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="2dp"
+            android:background="@color/list_divider_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="55dip"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:text="@string/buy_address_info_detail"
+                android:textSize="16sp"
+                android:textColor="@color/text_black"/>
+
+            <EditText
+                android:id="@+id/et_buy_address_info_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="@string/buy_address_receiver_detail_info_hint"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/text_gray"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="12dp">
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/wallet_yellow_circle_bg"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/SmallGrayTextView"
+            android:text="余额"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_header_my_wallent_balance"
+            style="@style/BigBlackTextView"
+            android:text="35.5"
+            android:textColor="@color/white"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_header_my_wallet_cash"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:textSize="14sp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:text="提现"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/main_yellow"
+        android:background="@drawable/btn_yellow_round_border_selector"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/text_gray" />
+
+        <TextView
+            style="@style/SmallGrayTextView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="余额明细" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/text_gray" />
+    </LinearLayout>
+</LinearLayout>

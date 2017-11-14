@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:textSize="16sp"
+        android:text="需要发送申请验证，对方通过后即可开始聊天"
+        android:textColor="@color/text_gray"
+        />
+
+
+    <com.jyx.android.widget.ClearableEditText
+        android:id="@+id/et_apply_msg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_search_edit_text"
+        android:hint="我是..."
+        android:textColor="@color/text_gray"
+        android:textColorHint="@color/text_gray"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        />
+
+</LinearLayout>

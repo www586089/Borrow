@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dip"
+    android:paddingTop="3dip"
+    android:background="@drawable/list_comment_background"
+    android:paddingLeft="15dp" >
+    <TextView
+        android:id="@+id/comment_item_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="林全:"
+        android:textColor="@color/text_gray"
+        android:textSize="14sp" >
+    </TextView>
+</LinearLayout>

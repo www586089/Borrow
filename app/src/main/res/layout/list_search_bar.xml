@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+>
+    <include layout="@layout/toolbar_simple_back_title"
+        android:id="@+id/toolbar"/>
+    <RelativeLayout
+        android:background="#ededed"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/rl_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:clickable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_item_search"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="left"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ic_search"
+                android:textColor="@color/main_yellow"
+                android:drawablePadding="7dp"
+                android:textSize="22sp"
+                android:hint="搜索"
+                android:lines="1"
+                android:imeOptions="actionSearch"
+                android:textColorHint="@color/text_gray"
+                />
+            <TextView
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/bt_search"
+                android:layout_toRightOf="@id/et_item_search"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" 搜  索 "
+                android:textColor="@color/main_yellow"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <TextView
+        android:clickable="true"
+        android:layout_below="@id/rl_search_view"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/tv_search_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_gray"
+        android:textSize="20sp" />
+    <View
+        android:layout_below="@id/tv_search_name"
+        android:background="@color/line_background" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <ListView
+        android:clickable="true"
+        android:layout_below="@id/tv_search_name"
+        android:id="@+id/lv_item_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</RelativeLayout>

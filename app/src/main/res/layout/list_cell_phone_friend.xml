@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="30dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/list_item_background"
+        >
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_default_avatar"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tv_nick_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/text_black"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_add_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/btn_green_round_selector"
+            />
+
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/list_divider_holo_light"
+        android:layout_marginLeft="80dp"
+        />
+
+</LinearLayout>
