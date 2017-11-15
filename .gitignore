@@ -1,10 +1,10 @@
 /.idea/misc.xml
-/IMKit/build.gradle
+#/IMKit/build.gradle
 /IMKit/IMKit.iml
 /.idea/gradle.xml
 /.gradle/2.9/taskArtifacts
 /app/app.iml
-/IMKit
+#/IMKit
 #built application files
 *.apk
 *.ap_
