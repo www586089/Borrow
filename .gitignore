@@ -49,3 +49,7 @@ obj/
 *.ipr
 *~
 *.swp
+#added begin
+gradle/
+gradlew.bat
+#added end
